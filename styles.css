@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* Hide default Streamlit branding */
+[data-testid="stHeader"], footer {
+    visibility: hidden;
+}
+
+/* General app styling */
+[data-testid="stAppViewContainer"] {
+    background-color: #FFFFFF;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #F8F9FA;
+    border-right: 1px solid #E0E0E0;
+}
+
+[data-testid="stSidebar"] h2 {
+    color: #333;
+}
+
+/* New Chat button */
+[data-testid="stSidebar"] .stButton button {
+    background-color: #0078D4;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+[data-testid="stSidebar"] .stButton button:hover {
+    background-color: #005A9E;
+}
+
+/* Chat history buttons */
+.chat-history-button {
+    background-color: #E9ECEF;
+    color: #333;
+    border: 1px solid #DEE2E6;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.chat-history-button:hover {
+    background-color: #DDE2E6;
+    border-color: #C6C8CB;
+}
+
+/* Chat message styling */
+.stChatMessage {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Assistant (bot) message */
+[data-testid="stChatMessage"][data-testid="stMarkdownContainer"] {
+    background-color: #FFFFFF;
+    border: 1px solid #0078D4;
+}
+
+/* User message */
+[data-testid="stChatMessage"]:has(div[data-testid="chat-avatar-user"]) {
+    background-color: #F0F2F6;
+}
