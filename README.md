@@ -23,7 +23,7 @@ This application is a demonstration of a powerful, customizable solution that ca
 
 ### See It In Action
 
-*(You can add a link to your demo GIF here if you have one)*
+
 `![Demo GIF](demo.gif)`
 
 ---
