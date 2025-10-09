@@ -19,7 +19,7 @@ In today's data-driven world, your most critical business intelligence is often 
 
 This application is a demonstration of a powerful, customizable solution that can be tailored to your specific business needs.
 
-[Live Demo](https://multi-file-rag-chatbot.streamlit.app/)
+[Live Demo](https://intellex-ai.streamlit.app/)
 
 ### See It In Action
 
