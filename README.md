@@ -15,28 +15,28 @@ In today's data-driven world, your most critical business intelligence is often 
 
 ## ✨ The Solution
 
-The **INTELLEX AI** is an intelligent AI assistant that ingests your unique business documents and transforms them into a conversational knowledge base. Instead of searching, you can simply **ask questions in plain English** and receive instant, accurate, and context-aware answers sourced directly from your own data.
+**INTELLEX AI** is an intelligent AI assistant that ingests your unique business documents and transforms them into a conversational knowledge base. Instead of searching, you can simply **ask questions in plain English** and receive instant, accurate, and context-aware answers sourced directly from your own data.
 
 This application is a demonstration of a powerful, customizable solution that can be tailored to your specific business needs.
 
-<br>
-
-[Live Demo](https://multi-file-rag-chatbot.streamlit.app/) <br>
+[Live Demo](https://multi-file-rag-chatbot.streamlit.app/)
 
 ### See It In Action
 
-![Demo GIF](demo.gif)
+*(You can add a link to your demo GIF here if you have one)*
+`![Demo GIF](demo.gif)`
+
 ---
 
 ## 🚀 Key Features & Business Benefits
 
-| Feature                  | Benefit for Your Business                                                                                             |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| **Multi-File Upload** | **Create a Centralized Knowledge Hub.** Upload all your PDFs, text files, and reports at once to create a single source of truth. |
-| **Advanced RAG Core** | **Get Instant, Accurate Answers.** Leverage cutting-edge AI to get reliable information cited directly from your documents, eliminating guesswork and "hallucinations." |
+| Feature | Benefit for Your Business |
+| :--- | :--- |
+| **Multi-File Upload** | **Create a Centralized Knowledge Hub.** Upload all your PDFs, text files, and reports at once to create a single source of truth for a specific topic. |
+| **Advanced RAG Core** | **Get Instant, Accurate Answers.** Leverage cutting-edge AI to get reliable information cited directly from your documents, eliminating guesswork. |
 | **Conversational AI** | **Boost Adoption & Ease of Use.** The intuitive chat interface requires no training. If you can ask a question, you can use this tool. |
-| **Persistent Chat History** | **Maintain a Seamless Workflow.** Your conversations are automatically saved and intelligently named, allowing you to pick up your research anytime. |
-| **Secure & Private** | **Your Data Stays Yours.** This model runs in a controlled environment, ensuring your sensitive business documents are never exposed or used for training external models. |
+| **Multi-Chat Session History** | **Maintain a Seamless Workflow.** Manage multiple topics in the same session. Your conversations are saved, allowing you to switch contexts instantly. |
+| **Secure & Private** | **Your Data Stays Yours.** The entire process runs in a controlled environment. Your sensitive documents are **never** exposed or used for training third-party AI models. |
 
 ---
 
@@ -79,7 +79,7 @@ Want to run this demo on your own machine?
     ```bash
     # Create and activate a virtual environment
     python -m venv fenv
-    source fenv/bin/activate  # On Windows use `fenv\Scripts\activate`
+    source fen/bin/activate  # On Windows use `fenv\Scripts\activate`
 
     # Install dependencies
     pip install -r requirements.txt
