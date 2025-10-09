@@ -1,16 +1,13 @@
-/* styles.css */
-
-/* Hide default Streamlit branding */
 [data-testid="stHeader"], footer {
     visibility: hidden;
 }
 
-/* General app styling */
+
 [data-testid="stAppViewContainer"] {
     background-color: #FFFFFF;
 }
 
-/* Sidebar styling */
+
 [data-testid="stSidebar"] {
     background-color: #F8F9FA;
     border-right: 1px solid #E0E0E0;
@@ -20,7 +17,7 @@
     color: #333;
 }
 
-/* New Chat button */
+
 [data-testid="stSidebar"] .stButton button {
     background-color: #0078D4;
     color: white;
@@ -36,8 +33,6 @@
     background-color: #005A9E;
 }
 
-
-/* Chat history buttons */
 .chat-history-button {
     background-color: #E9ECEF;
     color: #333;
@@ -58,18 +53,14 @@
     border-color: #C6C8CB;
 }
 
-/* --- ADDED FOR ACTIVE CHAT --- */
-/* Style for the currently active chat button */
+
 .chat-history-button.active {
     background-color: #0078D4;
     color: white;
     border: 1px solid #005A9E;
     font-weight: bold;
 }
-/* --- END OF ADDED STYLE --- */
 
-
-/* Chat message styling */
 .stChatMessage {
     padding: 1rem;
     border-radius: 0.5rem;
@@ -77,45 +68,40 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-/* Assistant (bot) message */
+
 [data-testid="stChatMessage"]:not(:has(div[data-testid="chat-avatar-user"])) {
-     background-color: #F0F8FF; /* Light blue for assistant */
+     background-color: #F0F8FF; 
      border-left: 5px solid #0078D4;
 }
 
-/* User message */
+
 [data-testid="stChatMessage"]:has(div[data-testid="chat-avatar-user"]) {
-    background-color: #F8F9FA; /* Light grey for user */
+    background-color: #F8F9FA; 
     border-left: 5px solid #6c757d;
 }
 
-/* Hide the actual streamlit buttons used for callbacks */
 [data-testid="stSidebar"] button[kind="primary"] {
     display: none;
 }
 
-/* --- ADD THIS AT THE END OF YOUR CSS FILE --- */
 
-/* --- REPLACE the old '.sidebar-footer' styles with this --- */
-
-/* Styles for the logo and tagline at the top of the sidebar */
 .sidebar-header {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-bottom: 20px; /* Adds some space below the tagline */
-    border-bottom: 1px solid #E0E0E0; /* A nice separator line */
-    margin-bottom: 15px; /* Space above the "Chat Controls" header */
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #E0E0E0; 
+    margin-bottom: 15px; 
 }
 
 .sidebar-header img {
-    width: 50px;         /* Increased logo width */
-    height: 50px;        /* Increased logo height */
+    width: 50px;         
+    height: 50px;        
     border-radius: 50%;
 }
 
 .sidebar-header span {
     color: black;
     font-weight: 500;
-    font-size: 16px; /* Slightly larger text */
+    font-size: 16px; 
 }

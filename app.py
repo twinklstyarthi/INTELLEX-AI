@@ -11,24 +11,18 @@ from llama_index.vector_stores.faiss import FaissVectorStore
 import faiss
 import base64
 
-# --- Constants ---
 USER_DATA_DIR = "user_data"
 
-# --- Utility Functions ---
 def load_css(file_name):
     """Loads a CSS file into the Streamlit app."""
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# --- THIS IS THE CORRECTED PART ---
-# The function name is now spelled correctly.
 def get_image_as_base64(path):
     """Encodes a local image file to a Base64 string."""
     with open(path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
-# --- END OF CORRECTION ---
 
-# --- Session and Chat Management ---
 def initialize_session_state():
     """Initializes session state variables if they don't exist."""
     st.session_state.setdefault("session_id", f"session_{uuid.uuid4()}")
@@ -41,7 +35,7 @@ def initialize_session_state():
 
 def save_current_chat():
     """Saves the state of the currently active chat into the session's chat history."""
-    if st.session_state.current_chat_id: # Allow saving empty chats
+    if st.session_state.current_chat_id: 
         st.session_state.chat_histories[st.session_state.current_chat_id] = {
             "messages": list(st.session_state.messages),
             "chat_engine": st.session_state.chat_engine,
@@ -86,12 +80,12 @@ def get_chat_display_name(chat_id):
         return display_text
     return "New Chat"
 
-# --- Main Application Logic ---
+#Main Application Logic
 def main():
     """Main function to run the Streamlit app."""
     st.set_page_config(
         page_title="INTELLEX AI",
-        page_icon="assets/favicon.png", # Path to your favicon
+        page_icon="assets/favicon.png", 
         layout="wide"
     )
     load_dotenv()
